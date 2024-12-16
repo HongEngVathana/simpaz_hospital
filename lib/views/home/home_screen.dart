@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:remixicon/remixicon.dart';
+import 'package:simpaz_hospital/views/screen/schedule_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -174,24 +175,3 @@ class MessagePage extends StatelessWidget {
   }
 }
 
-class SchedulePage extends StatelessWidget {
-  final String title;
-  final Color color;
-  const SchedulePage({super.key, required this.title, required this.color});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        backgroundColor: color,
-      ),
-      body: Center(
-        child: Text(
-          title,
-          style: TextStyle(fontSize: 32, color: color),
-        ),
-      ),
-    );
-  }
-}
